@@ -5,3 +5,7 @@
     - name: update repository index
       apt:
         update_cache: yes
+
+    - name: upgrade distribution
+      apt:
+        upgrade: dist
