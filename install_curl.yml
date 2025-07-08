@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: install curl package
+      apt:
+        name: curl
+        state: latest
