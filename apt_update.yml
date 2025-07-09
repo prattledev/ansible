@@ -6,6 +6,6 @@
       apt:
         update_cache: yes
 
-    - name: upgrade distribution
+    - name: upgrade packages
       apt:
         upgrade: dist
