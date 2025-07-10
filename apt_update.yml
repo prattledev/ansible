@@ -2,10 +2,7 @@
 - hosts: all
   become: true
   tasks:
-    - name: update repository index
+    - name: update apt cache and upgrade distro
       apt:
         update_cache: yes
-
-    - name: upgrade packages
-      apt:
         upgrade: dist
