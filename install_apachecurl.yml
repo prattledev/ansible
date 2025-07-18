@@ -3,10 +3,9 @@
   become: true
   tasks:
     - name: install apache2 and curl packages
-      apt:
+      package:
         name:
           - apache2
           - curl
         state: latest
         update_cache: yes
-      when: ansible_distribution == "Ubuntu"
